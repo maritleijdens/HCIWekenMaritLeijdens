@@ -1,0 +1,48 @@
+* {
+	font-family: Helvetica;
+}
+
+
+
+/* ------------ HEADERS ------------ */
+
+h1 {
+	color: #000000;
+	text-align: center;
+
+}
+
+h2 {
+	text-align: center;
+}
+
+header {
+	position: absolute;
+	top: 0;
+	color: #FFFFFF;
+}
+
+#parallaximg {
+	position: relative;
+	height: 300px;
+}
+
+/* ------------ INTRODUCTION ------------ */
+
+#introduction {
+
+	margin-top: 50px;
+}
+
+div {
+	padding: 20px;
+	padding-top: 5px;
+}
+
+img {
+	width: 500px;
+}
+
+video {
+	width: 500px;
+}
