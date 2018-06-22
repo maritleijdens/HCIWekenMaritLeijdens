@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Arduino</title>
+	<link type="text/css" href="css/style.css" rel="stylesheet" />
+	<link type="text/css" href="css/navigation.css" rel="stylesheet" />
+	<link type="text/css" href="css/uikit-rtl.css" rel="stylesheet" />
+	<link type="text/css" href="css/uikit-rtl.min.css" rel="stylesheet" />
+	<link type="text/css" href="css/uikit.css" rel="stylesheet" />
+	<link type="text/css" href="css/uikit.min.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="uk-height-large uk-background-cover uk-light uk-flex" id="parallaximg" uk-parallax="bgy: -100" style="background-image: url('afbeeldingen/achtergrond.png');">
+	</div>
+	<header>
+		<h1>HCI Portfolio</h1>
+		<h2>Arduino - Assignments</h2>
+		<nav>
+			<ul>
+				<li class="navHome">
+					<a href="../index.html">Home</a>
+				</li>
+
+				<li class="navEG">
+					Exertion Games
+					<ul class="navEG2">
+						<li ><a href="../exertiongames/assignments.html">Assignments</a></li>
+						<li><a href="../exertiongames/research.html">Research</a></li>
+						<li><a href="../exertiongames/reflect.html">Reflect</a></li>
+					</ul>
+				</li>
+
+				<li class="navAR">
+					AR&amp;VR
+					<ul class="navAR2">
+						<li><a href="../arvr/assignments.html">Assignments</a></li>
+						<li><a  href="../arvr/research.html">Research</a></li>
+						<li><a href="../arvr/reflect.html">Reflect</a></li>
+					</ul>
+				</li>
+
+				<li class="navWA">
+					Wearables
+					<ul class="navWA2">
+						<li><a href="../wearables/assignments.html">Assignments</a></li>
+						<li><a href="../wearables/research.html">Research</a></li>
+						<li><a href="../wearables/reflect.html">Reflect</a></li>
+					</ul>
+				</li>
+
+				<li class="navAC">
+					Artificial Creatures
+					<ul class="navAC2">
+						<li><a href="../artificialcreatures/assignments.html">Assignments</a></li>
+						<li><a href="../artificialcreatures/research.html">Research</a></li>
+						<li><a href="../artificialcreatures/reflect.html">Reflect</a></li>
+					</ul>
+				</li>
+
+				<li class="navCV">
+					Computer Vision
+					<ul class="navCV2">
+						<li><a href="../computervision/assignments.html">Assignments</a></li>
+					</ul>
+				</li>
+
+				<li class="navUPM">
+					Unity/Projection mapping
+					<ul class="navUPM2">
+						<li><a href="../unityprojectingmapping/assignments.html">Assignments</a></li>
+					</ul>
+				</li>
+
+				<li class="navA">
+					Arduino
+					<ul class="navA2">
+						<li><a href="../arduino/assignments.html">Assignments</a></li>
+					</ul>
+				</li>
+
+				<li  class="navEX">
+					Excursion
+					<ul class="navEX2">
+						<li><a href="../excursion/assignments.html">Assignments</a></li>
+						<li><a href="../excursion/reflect.html">Reflect</a></li>
+					</ul>
+				</li>
+
+				<li  class="navLW">
+					Lab Weeks
+					<ul class="navLW2">
+						<li><a href="../labweeks/process.html">Process</a></li>
+						<li><a href="../labweeks/product.html">Product</a></li>
+						<li><a href="../labweeks/reflect.html">Reflect</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<div id="introduction">
+		<p>In the last workshop, we got to work with the Arduino kit we had purchased. It was divided into two workshops, this means more time with the Arduino kit. I really liked working with it, I think it is great that you can see what you build. Underneath, some exercises are shown. What is shown, are the codes, a video of the outcome and a small explanation of the exercise. Enjoy!</p>
+	</div>
+
+	<div id="exercise">
+		<h3>Exercise 3C</h3>
+		<p>We are working with LEDs at this moment, and I had to write the code and set the Arduino that one LED would light up and be out twice as long as the other LED. I used a green and a yellow LED and we were given a diagram that helped us set up the code.</p>
+		<p>At this point it is not hard and if you follow the instructions you can carry out the assignments just fine. I did use the diagram with this, but when I saw it, it became very clear what to do.</p>
+		<img src="afbeeldingen/Arduino-3C.png" class="img3C">
+		<video controls> 
+			<source src="afbeeldingen/Arduino3C.MOV" type="video/mp4" class="vid3C">			
+		</video>
+	</div>
+
+	<div id="exercise">
+		<h3>Exercise 4C</h3>
+		<p>After working with LEDs going on and off, we worked with them changing brightness. Underneath you can see how I worked out the code, so one LED gradually goes on and the other off.</p>
+		<p>What was difficult in this assignment, that you needed to know how to adress the brightness and it going down instead of up. Therefore, I asked some help and got a math problem I needed to solve and use in my code (255-brightness).</p>
+		<img src="afbeeldingen/Arduino-4C.png" class="img4C">
+		<video controls> 
+			<source src="afbeeldingen/Arduino4C.MOV" type="video/mp4" class="vid4C">			
+		</video>
+	</div >
+
+	<div id="exercise">
+		<h3>Exercise 6C</h3>
+		<p>Here we worked with a potmeter, which could control the brightness of the LED, if you code it correctly. Here we went a step further and needed the potmeter to control the lights, but one would fade away as the other would light up.</p>
+		<p>The math problem from 4C came back in this exercise, but instead of using brightness, you needed to use the sensorValue. You also needed to use map(), which was important, because we worked with a potmeter. A potmeter has a  maximum and minimum value of 0 and 1023, and those values are not the same for a LED. That is why you needed to map those values, that the potmeter uses the maximum values of the LED (0 and 255).</p>
+		<img src="afbeeldingen/Arduino-6C.png" class="img6C">
+		<video controls> 
+			<source src="afbeeldingen/Arduino6C.MOV" type="video/mp4" class="vid6C">			
+		</video>
+	</div>
+
+	<div>
+		<h3>Exercise 7</h3>
+		<p>Next to the potmeter, we can also work with a LDR (Light Dependent Resistor) to make the LEDs turn on or off. That is what is shown below. </p>
+		<p>This assignment was not hard, the LDR just had to be placed correctly and the right resistors needed to be used.</p>
+		<img src="afbeeldingen/Arduino-7.png" class="img7">
+		<video controls> 
+			<source src="afbeeldingen/Arduino7.MOV" type="video/mp4" class="vid7">			
+		</video>
+	</div>
+
+	<div>
+		<h3>Exercise 8B</h3>
+		<p>Back to the potmeter, because the potmeter is used in this exercise. I used the potmeter to move a rectangle in Processing, which was linked to the Arduino. You can see that when you turn the wheel on the potmeter, the rectangle moves on the screen from one corner to another.</p>
+		<p>You already got the Processing code, so the only thing you had to change was the shape or direction of the shape that was already linked to the potmeter and Arduino.</p>
+		<img src="afbeeldingen/Arduino-8B.png" class="img8B">
+		<img src="afbeeldingen/Arduino-8.png" class="img8">
+		<video controls> 
+			<source src="afbeeldingen/Arduino8B.MOV" type="video/mp4" class="vid8B">			
+		</video>
+	</div>
+
+	<div id="exercise">
+		<h3>Exercise 9F</h3>
+		<p>An item you can also control light with, are buttons. Exercise 9 was about using the buttons to control the light and in exercise 9F, the lights needed to go on when one button was pressed. It needed to go out when both buttons or no button was pushed.</p>
+		<p>At first I did not succeed, it did not work, but with a little help and looking back on the previous exercises (9), I eventually came to the solution.</p>
+		<img src="afbeeldingen/Arduino-9F.png" class="img9F">
+		<video controls> 
+			<source src="afbeeldingen/Arduino9F.MOV" type="video/mp4" class="vid9F">			
+		</video>
+	</div>
+
+	<div id="exercise">
+		<h3>Exercise 10B</h3>
+		<p>The arduino can also make a robot dance, and not any robot. A servo, this is a little engine that you can give legs and make the legs move. That is what I did in this exercise. I send a code to the servo, that made him move in a specific way, that kind of looks like dancing.</p>
+		<p>The code was not that hard, but it had to be a little dance, what made it harder. I could make the servo move, but that was just its feet going from one way to another. At the end, I made it do a little step between, some sort of pause.</p>
+		<img src="afbeeldingen/Arduino-10B.png" class="img10B">
+		<video controls> 
+			<source src="afbeeldingen/Arduino10B.MOV" type="video/mp4" class="vid10B">			
+		</video>
+	</div>
+
+	<div id="exercise">
+		<h3>Exercise 11B</h3>
+		<p>To stay with the servo, there is a way you can control the engine with buttons. One button should move the servo clockwise and the other counter-clockwise.</p>
+		<p>I found this exercise more difficult and the ones I had already done and needed extra help with it.</p>
+		<img src="afbeeldingen/Arduino-11B.png">
+		<video controls> 
+			<source src="afbeeldingen/Arduino11B.MOV" type="video/mp4">
+		</video>
+	</div>
+
+	<div id="exercise">
+		<h3>Exercise 12B</h3>
+		<p>Making music is also a possibility with the Arduino, when you build a circuit with a speaker and code the notes, your Arduino sings a song for you. </p>
+		<p>I worked on this exercise with a friend of mine, and we did the melody of ... and it was not really hard, because the code was given in the previous exercise (12A).</p>
+		<img src="afbeeldingen/Arduino-12B.png">
+		<video controls> 
+			<source src="afbeeldingen/Arduino12B.MOV" type="video/mp4" vid="vid12B">			
+		</video>
+	</div>
+
+	<div id="exercise">
+		<h3>Exercise 13E</h3>
+		<p>In this exercise, we needed to let the speaker make a sound when it went out of two values. Mine does not work. I do not know what I did wrong and asked a lot of people for help. My only thought is, that the speaker might be broken.</p>
+		<img src="afbeeldingen/Arduino-13.png">
+		<img src="afbeeldingen/Arduino-13E.png">
+	</div>
+
+</body>
+</html>
