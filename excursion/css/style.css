@@ -1,0 +1,63 @@
+* {
+	font-family: Helvetica;
+}
+
+
+
+/* ------------ HEADERS ------------ */
+
+h1 {
+	color: #FFFFFF;
+	text-align: center;
+
+}
+
+h2 {
+	text-align: center;
+
+}
+
+header {
+	position: absolute;
+	top: 0;
+	color: #FFFFFF;
+}
+
+#parallaximg {
+	position: relative;
+	height: 300px;
+}
+
+
+/* ------------ INTRODUCTION ------------ */
+
+#introduction {
+	padding: 50px;
+	padding-bottom: 5px;
+	margin-top: 50px;
+	width: 700px;
+	float: left;
+}
+
+.text{
+	width: 700px;
+	float: left;
+}
+
+.text2 {
+	float: left;
+}
+
+img {
+	padding-top: 20px;
+	width: 350px;
+	float: right;
+	padding-bottom: 50px;
+}
+
+
+
+div {
+	padding: 50px;
+	padding-top: 5px;
+}
